@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	text-decoration:none;
+	list-style:none;
+	font-size: 15px;
+}
+.blockmenu{
+	max-width:100vw;
+	display:flex;
+	justify-content:space-between;
+	padding: 20px 20px 20px 0;
+}
+.menu{
+	width:50%;
+	display: flex;
+	justify-content: space-between;
+}
+.menuLink{
+	font:1rem Montserrat;
+	font-weight:900;
+	color:#EE3325;
+}
+.linklang{
+	font:.5rem Montserrat;
+	font-weight: 400;
+}
+label{
+	font:1rem Montserrat;
+	font-weight:200;
+	color: #EE3325;
+	display:none;
+}
+#menumobile{
+	display: none;
+}
+
+@media(max-width:768px){
+	.menu{
+		width:100%;
+ 		height:100%;
+		display: none;
+	}
+	label{
+		display:block;
+	}
+	#menumobile:checked ~ .menu{
+		display: flex;
+    	flex-direction: column;
+    	position: absolute;
+    	background-color: white;
+    	text-align: center;
+	}
+}
+
+.blockheader{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-image: linear-gradient(to bottom, transparent 50%, #0083CA 100%), url(assets/female-farmer-kenya-west.png);
+    background-size:cover;
+}
+.blockheaderText{
+	max-width: 30%;
+	font:2.5rem Montserrat;
+	font-weight:900;
+	color: #fff;
+}
+.blockcontactheader{
+	width:15%;
+	/*height:30%;*/
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	border-radius:20px;
+	margin-top: 50%;
+	background-color: #EE3325;
+}
+.imagecontact{
+	width: 25px;
+}
+.textcontactheader{
+	font:1rem Montserrat;
+	font-weight: 900;
+	color: #fff;
+}
+@media(max-width: 768px){
+	.blockheader{
+		justify-content: center;
+		padding: 0;
+		background-size: 144% 100%;  /*CONCERTAR DEPOIS*/
+	}
+	.blockheaderText{
+		max-width: 70%;
+		font-size: 2rem;
+	}
+	.textcontactheader{
+		display: none;
+	}
+}
+.containerproducts{
+	background-color: #0083CA;
+}
