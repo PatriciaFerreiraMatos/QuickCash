@@ -76,7 +76,7 @@ label{
 	justify-content:space-around;
 	align-items: center;
 	border-radius:20px;
-	margin-top: 50%;
+	margin-top: 47%;
 	background-color: #EE3325;
 }
 .imagecontact{
@@ -103,4 +103,40 @@ label{
 }
 .containerproducts{
 	background-color: #0083CA;
+}
+.containerproducts{
+	height: 80vh;
+    display: flex;
+    justify-content: space-between;
+   /* align-items: center;*/
+    flex-direction: column;
+    padding: 50px;
+    background-color: #0083CA;
+}
+.productsTitle{
+	font:2.3rem Montserrat;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 30px;
+}
+.productsBlock{
+	/*max-width: 80%;*/
+	display: flex;
+	justify-content: space-between;
+	/*padding: 30px 20px 20px 7px;*/
+}
+.productsBlockSub{
+	max-width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.productsSubblockText, .productsSubblockTextsecond{
+	font: 1.5rem Montserrat;
+	font-weight: 700;
+	color: #fff;
+}
+.productsSubblockTextsecond{
+	font-size:.9rem;
+	font-weight: 300;
 }
